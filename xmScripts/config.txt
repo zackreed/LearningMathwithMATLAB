@@ -7,8 +7,8 @@
 #
 # For publishing you'll need a GPG Key
 # To generate a key-pair, fill in your name and email, and run 'xmlatex genKey'
-YOUR_NAME="DUMMY_NAME_TEST"
-YOUR_EMAIL="DUMMY_EMAIL_TEST"
+YOUR_NAME="Zack Reed"
+YOUR_EMAIL="reedz@erau.edu"
 #
 # Current 'xmlatex genKey' logic:
 #      if there is no .xmKeyFile, and it is properly .gitignored, 
@@ -23,7 +23,7 @@ YOUR_EMAIL="DUMMY_EMAIL_TEST"
 
 ## : "${XIMERA_NAME:=myreponame}"
 ## : "${XIMERA_URL:=http://localhost:2000/}"
-## : "${XIMERA_URL:=https://ximera.osu.edu/}"
+: "${XIMERA_URL:=https://ximera.osu.edu/}"
 ## : "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
 ## : "${XIMERA_URL:=https://set.kuleuven.be/voorkennis/}"
 
@@ -49,7 +49,8 @@ YOUR_EMAIL="DUMMY_EMAIL_TEST"
 #
 # For use in Actions, and perhaps to adapt the functionality of the PDF/HTML/SERVE buttons
 #
-# export XM_COMPILE_SEQUENCE=html            # which output to generate, eg "pdf,handout.pdf,html"# export XM_TO_PROCESS=aFirstXourse.tex      # only build/frost/serve these files/courses
+# export XM_COMPILE_SEQUENCE=html            # which output to generate, eg "pdf,handout.pdf,html"
+# export XM_TO_PROCESS=aFirstXourse.tex      # only build/frost/serve these files/courses
 # export XM_CONFIGFILE=more.cfg              # exotic: if you want to use a different TeX4ht config file
 # export XM_SETTINGSFILE=config.lua          # yet another way to set some options/Settings
 # export XM_ONLY_CHECK=1                     # do not actually compile/clean anything  (NOT IMPLEMENTED for frost/serve!)
